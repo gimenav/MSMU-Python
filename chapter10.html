@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>MSMU Python Chapter 10</title>
+        <link rel="stylesheet" href="chapter10.css">
+
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="http://www.ecampustours.com/Media/eCTMediaLibraries/School%20Images/119173-101.gif" alt="">
+        </div>
+
+        <ul class="menu-ctn">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li id="menu">Coursework
+                <ul id="dropdown">
+                    <li><a href="chapter1.html">Chapter 1</a></li>
+                    <li><a href="chapter2.html">Chapter 2</a></li>
+                    <li><a href="chapter3.html">Chapter 3</a></li>
+                    <li><a href="chapter4.html">Chapter 4</a></li>
+                    <li><a href="chapter5.html">Chapter 5</a></li>
+                    <li><a href="chapter6.html">Chapter 6</a></li>
+                    <li><a href="chapter7.html">Chapter 7</a></li>
+                    <li><a href="chapter8.html">Chapter 8</a></li>
+                    <li><a href="chapter9.html">Chapter 9</a></li>
+                    <li><a href="chapter10.html">Chapter 10</a></li>
+                    <li><a href="chapter11.html">Chapter 11</a></li>
+                    <li><a href="chapter12.html">Chapter 12</a></li>
+                </ul>
+            </li>
+          
+        </ul>
+    </nav>
+
+    <script src="dropdown2.js"></script>
+        
+        <div class="summary">
+          <h1><u>Chapter 10: Files</u></h1>
+          <h4><b>What are files?</b></h4>
+          <p><u>Files</u> are data that is saved in the computer memory. A document containing an essay about the roman empire that is saved in a computer is a type of file. </p>
+          <h4><b>What can one do with files?</b></h4>
+          <p>In Python and other programming languages, one can read, write and open, close a file, among other things.</p>
+          <h4><b>How to read a file?</b></h4>
+          <p>There are different ways to read a line, for example, one can read the whole text file, or one line or multiple lines from the file.</p>
+          <p>To read a file, the programmer needs to first open the file, then type "r" after the name of the file. The "r" tells Python that the file will be read after opening. Then the programmer needs to print the variable name that has the file and type the read function ( read() ) afterwards.</p>
+          <img src="read1.png" alt="" class="read1-img">
+          <p><u>Results:</u></p>
+          <img src="read2.png" alt="" class="read2-img">
+          <h4><b>How to read text lines with a iterator?</b></h4>
+          <p>In order to iterate through a file, the programmer needs to first open the text file and then create a for loop. In the for loop, the loop needs to iterate through the lines of the text file, so the readlines methods needs to be typed next to the text file in the for loop. And depending on what the programmer wants to do with the text file, they can add an accumulator variable or do something else with the file.</p>
+            <ul>
+                <li>This example shows how to read how many lines there are in the text file.</li>
+            </ul>
+          <img src="readf.png" alt="" class="readf-img">
+          <h4><b>How to use the wrire method on files?</b></h4>
+          <p>Using the write method, is similar to the reading method, in that the file needs to be open, and that it can be used in for loops. The differences are that instead of typing "r" next to the text file name, the programmer needs to type "w", for write. Another difference is that with the write method, instead of Python reading the text file, the programmer can select parts or all of the characters in the text file and manipulate or change it to something else.  </p>
+            <ul>
+                <li>Let's look at the difference between the read method and the write method. The example below is for the read method.</li>
+            </ul>
+          <img src="write1.png" alt="" class="write1-img">
+         <p><u>Results:</u></p>
+         <img src="write2.png" alt="" class="write2-img">
+         <ul>
+             <li>This is an example of the write method.</li>
+         </ul>
+         
+         <img src="write3.png" alt="" class="write3-img">
+         <p><u>Results:</u></p>
+         <img src="write4.png" alt="" class="write4-img">
+         <h4><b>What is a CSV file?</b></h4>
+         <p>A <u>CSV</u> file stands for "Comma Separated Values", and stores tabular data, which is numbers and text. The comma that separates the tabular data is called "delimiter". </p>
+         <h4><b>How to read CSV files?</b></h4>
+         <p>In order to read a CSV file, the programmer needs to: </p>
+            <ol>
+                <li>Import the CSV file, and then open the file.</li>
+                <ul class="note">
+                    <li>But in order to open the CSV file, the programmer needs to use both the with statement and the open function.</li>
+                    <li>This is because when files are used, they first need to be opened and then closed when the program ends. </li>
+                    <li>Using the with statement together with the open function, opens the file and then closes the file, without using the close function. Inside the open function parameters, there should be the CSV file name and the method that the programmer wants to use, such as "r" for reading or "w" for writing. </li>
+                </ul>
+                <li>Type the "as file", which states that this is being open as a file.</li>
+                <li>Choose to use a for loop to read the CSV file or do something else with the file.</li>
+                <ul class="note2">
+                    <li>If they are reading the file, then they need a CSV reader method to read the file, and lastly there needs to be a for loop to iterate through the file and read it.</li>
+                </ul>
+            </ol>
+        <img src="csv1.png" alt="" class="csv-img">
+        <h4><b>How to use the write method on CSV files?</b></h4>
+        <p>To use the write method on CSV files, the same steps that were used to read CSV files, the only difference is that the programmer doesn't use the CSV reader method, but the CSV reader method. And the programmer can alter the content inside the CSV file. </p>
+        <img src="csv2.png" alt="" class="csv2-img">
+        <p><u>Results:</u></p>
+        <img src="csv4.png" alt="" class="csv4-img">
+         </div>
+        
+
+        <footer class="page-footer clearfix">
+            <div class="page-footer-content fixed-width clearfix">
+                <small class="copy-right">All Content Copyright 2020 All Rights Reserved</small>
+                <small class="credits">Site Designed by<a href="#"> Gimena Valenzuela</a></small>
+            </div>
+        </footer>
+    </body>
+</html>

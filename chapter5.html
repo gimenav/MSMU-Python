@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>MSMU Python Chapter 5</title>
+        <link rel="stylesheet" href="chapter5.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="http://www.ecampustours.com/Media/eCTMediaLibraries/School%20Images/119173-101.gif" alt="">
+        </div>
+
+        <ul class="menu-ctn">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li id="menu">Coursework
+                <ul id="dropdown">
+                    <li><a href="chapter1.html">Chapter 1</a></li>
+                    <li><a href="chapter2.html">Chapter 2</a></li>
+                    <li><a href="chapter3.html">Chapter 3</a></li>
+                    <li><a href="chapter4.html">Chapter 4</a></li>
+                    <li><a href="chapter5.html">Chapter 5</a></li>
+                    <li><a href="chapter6.html">Chapter 6</a></li>
+                    <li><a href="chapter7.html">Chapter 7</a></li>
+                    <li><a href="chapter8.html">Chapter 8</a></li>
+                    <li><a href="chapter9.html">Chapter 9</a></li>
+                    <li><a href="chapter10.html">Chapter 10</a></li>
+                    <li><a href="chapter11.html">Chapter 11</a></li>
+                    <li><a href="chapter12.html">Chapter 12</a></li>
+                </ul>
+            </li>
+          
+        </ul>
+    </nav>
+
+    <script src="dropdown2.js"></script>
+        
+        <div class="summary">
+            <h1><u>Chapter 5: Turtle Function</u></h1>
+            <h4><b>What is Turtle graphics?</b></h4>
+            <p><u>Turtle graphics</u> is the turtle module that was introduced in Chapter 4. With this module, the programmer can draw pictures of shapes, objects( such as houses,dart board, trees) and art(abstract art and 3D art).</p>
+            <h4><b>How does the turle module work?</b></h4>
+            <ol>
+                <li>The turtle is named and activated.</li>
+                <li>The programmer commands the turtle to move forward, back, right or left.
+                    <ul class="note">
+                    <li> However, for the left and right directions, the numbers that the programmer puts on the parentheses are the angles that the turtle will rotate to go to.</li>
+                    <li> And the numbers that are in the forward and back directions, are the amount of pixels that the turtle will move in the screen/window.</li>
+                </ul> 
+                <li>For the turtle to draw a picture, the programmer needs to command the turtle to put its tail down. Kind of like when a human is drawing; it needs to put the pencil/pen down to draw something. Now, if the programmer wants to move the turtle without drawing anything, they need to tell the turtle to put its tail up and then move to the desired direction.</li>
+            </ol>
+            <!--<p>First the turtle is named and activated, then the programmer commands the turtle to move forward, back, right or left. However, for the left and right directions, the numbers that the programmer puts on the parentheses are the angles that the turtle will rotate to go to. And the numbers that are in the forward and back directions, are the amount of pixels that the turtle will move in the screen/window.  Now, in order for the turtle to draw a picture, the programmer needs to command the turtle to put its tail down. Kind of like when a human is drawing; it needs to put the pencil/pen down to draw something. Now, if the programmer wants to move the turtle without drawing anything, they need to tell the turtle to put its tail up and then move to the desired direction. </p> -->
+            <img src="turtle 3.png" alt="" class="turtle-img">
+            <p>This is the end result, notice how there are blank spots in between the lines. That's because the turtle was instructed to move without the tail down(making it not draw anything).</p>
+            <img src="turtle result.png" alt="" class="turtle-result">
+            <h4><b>Can users use more than one turtle at the time?</b></h4>
+            <p>Yes. Each turtle is called an <u>instance</u>, because they are independent objects, with their own attributes and methods, that makes them different from each other. </p>
+            <h4><b>How to use multiple turtles?</b></h4>
+            <p>Each turtle needs to have their own unique name and needs to be activated. Then the programmer needs to instruct each turtle to move in a certain direction. Each turtle starts in the same spot, which is in the middle of the screen, unless the programmer assigns the turtle to move before starting to draw. </p>
+            <p>Here is an example of using two different turtles:</p>
+            <img src="yoda1.png" alt="" class="yoda-1">
+            <img src="yoda2.png" alt="" class="yoda-2">
+            <p><u>This is the end result:</u></p>
+            <img src="yodaresult.png" alt="" class="yoda-result">
+        </div>
+        
+
+        <footer class="page-footer clearfix">
+            <div class="page-footer-content fixed-width clearfix">
+                <small class="copy-right">All Content Copyright 2020 All Rights Reserved</small>
+                <small class="credits">Site Designed by<a href="#"> Gimena Valenzuela</a></small>
+            </div>
+        </footer>
+    </body>
+</html>

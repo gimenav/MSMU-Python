@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>MSMU Python Chapter 11</title>
+        <link rel="stylesheet" href="chapter11.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="http://www.ecampustours.com/Media/eCTMediaLibraries/School%20Images/119173-101.gif" alt="">
+        </div>
+
+        <ul class="menu-ctn">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li id="menu">Coursework
+                <ul id="dropdown">
+                    <li><a href="chapter1.html">Chapter 1</a></li>
+                    <li><a href="chapter2.html">Chapter 2</a></li>
+                    <li><a href="chapter3.html">Chapter 3</a></li>
+                    <li><a href="chapter4.html">Chapter 4</a></li>
+                    <li><a href="chapter5.html">Chapter 5</a></li>
+                    <li><a href="chapter6.html">Chapter 6</a></li>
+                    <li><a href="chapter7.html">Chapter 7</a></li>
+                    <li><a href="chapter8.html">Chapter 8</a></li>
+                    <li><a href="chapter9.html">Chapter 9</a></li>
+                    <li><a href="chapter10.html">Chapter 10</a></li>
+                    <li><a href="chapter11.html">Chapter 11</a></li>
+                    <li><a href="chapter12.html">Chapter 12</a></li>
+                </ul>
+            </li>
+          
+        </ul>
+    </nav>
+
+    <script src="dropdown2.js"></script>
+        
+        <div class="summary">
+            <h1><u>Chapter 11: Dictionaries</u></h1>
+            <h4><b>What are dictionaries?</b></h4>
+            <p>A <u>dictionary</u> is a disorganized collection of data values, that is mapped out by using keys and values. Keys are items that help the programmer or user find the value of the key. So for example, when reading a book about Artificial Intelligence, but are looking for the keyword "autonomic computing", so you look in the back of the book, where it has the keyword, and next to it the page number(value) to find it.</p>
+            <ul>
+              <li>One thing to remember is that keys have to be immutable data types, such as strings, numbers and tuples. And values can be any data type.</li>
+            </ul>
+            
+            <img src="dict.png" alt="" class="dict-img">
+            <h4><b>How to delete a key-value pair?</b></h4>
+            <p>In order to delete a key-value pair, the programmer needs to use the "del" statement after the dictionary is initialized. Then the programmer needs to type the del statement, next to it the variable name of the dictionary and the key.</p>
+            <img src="dict2.png" alt="" class="dict2-img">
+            <h4><b>How to find the length of a dictionary?</b></h4>
+            <p>In order to find how many key-value pairs in a dictionary, the programmer needs to use the "len" method. So, first comes the length method and then the name of the dictionary.</p>
+            <img src="dict3.png" alt="" class="dict3-img">
+            <h4><b>How to update a value in a key-value pair?</b></h4>
+            <p>To update a value in a key-value pair, the programmer needs to type the name of the dictionary, then square brackets. Inside the brackets the name of the key that the programmer wants to update or change, and outside the brackets an equal sign and then the new value.</p>
+            <img src="dict4.png" alt="" class="dict4-img">
+            <h4><b>How to use the keys method?</b></h4>
+            <p>The keys method is used to return the keys in the dictionary. So, if the programmer wants to output all the keys in the dictionary, they can type a for loop with the name of the dictionary, the keys method, and parentheses next to it. Or they type the name of the dictionary, then the key method and parentheses, inside the print function. In addition, the programmer can print the key values in a list form, instead of a string. </p>
+            <img src="key.png" alt="" class="key-img">
+            <h4><b>How to use the values method?</b></h4>
+            <p>Using the values method is very similar to using the keys method, in that the programmer can use the print function and can print the values into a list format. The main difference is that the output will be the values of the dictionary.</p>
+            <img src="values.png" alt="" class="values-img">
+            <h4><b>How to use the items method?</b></h4>
+            <p>Using the items method is the same as using the values method. The difference is that the output is the key-value pair, so it prints both items of the dictionary.</p>
+            <img src="items.png" alt="" class="items-img">
+            <h4><b>How to use the get method?</b></h4>
+            <p>Using the get method is like using the values and items method, in that the print function can be used to output values of the dictionary. The difference is that the get method can output the value of the key-value pair. Or the programmer can get the value of a key, and if the key is not in the dictionary, they can get an alternate key value.</p>
+            <img src="get.png" alt="" class="get-img">
+            <h4><b>How to use the copy method on dictionaries?</b></h4>
+            <p>Using the copy method is an alternate way of aliasing, where the value of a variable is assigned to another variable. The main difference is that the copy method doesn't return a Boolean variable. Instead it outputs the value of the original variable that was assigned to another variable.</p>
+            <p>The way to use the copy method is by first creating the name of the variable that will be assigned to the original dictionary's value. Afterwards comes the equal sign, then the name of the dictionary, and next to it the copy method, with the paratheses.</p>
+            <img src="copy.png" alt="" class="copy-img">
+            <h4><b>How to find how many times a word occurs in a string?</b></h4>
+            <p>If there is a string that needs to be converted into a dictionary, the first thing to do is to split it and make it into a list.</p>
+            <img src="occur1.png" alt="" class="occur1-img">
+            <p>Next create a variable with an empty dictionary. This variable will be used to convert the items in the list into key-value pairs that will be assigned to the empty dictionary. After that, the programmer needs to iterate through all the items in the list, and then use the "if" statement and "not in" operator. Why is this statement and operator needed in this situation? Well, because it is a conditional, and it tells Python that if the items in the list are not in the dictionary, to put all the items into the dictionary, convert them into keys and assign each key to a value. </p>
+            <img src="occur2.png" alt="" class="occur2-img">
+            <p>Lastly, in order to find out how many times a word occurs in a string, the programmer needs to use the accumulator pattern after the for loop, to add up all the occurences of each word.</p>
+            <img src="occur3.png" alt="" class="occur3-img">
+           <!--<h4><b>How to convert a string into a dictionary, and find the minimum value in that dictionary?</b></h4>
+            <p>To convert a string to a dictionary and find how many times a character appears in the string, look back at question: "How to find how many times a word occurs in a string?". After geting that information, the programmer needs to convert the dictionary into a list of the characters, in order to find the minimum value.</p>--> 
+
+    </div>
+        
+
+    <footer class="page-footer clearfix">
+        <div class="page-footer-content fixed-width clearfix">
+            <small class="copy-right">All Content Copyright 2020 All Rights Reserved</small>
+            <small class="credits">Site Designed by<a href="#"> Gimena Valenzuela</a></small>
+        </div>
+    </footer>
+</body>
+</html>

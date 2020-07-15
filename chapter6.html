@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>MSMU Python Chapter 6</title>
+        <link rel="stylesheet" href="chapter6.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="http://www.ecampustours.com/Media/eCTMediaLibraries/School%20Images/119173-101.gif" alt="">
+        </div>
+
+        <ul class="menu-ctn">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li id="menu">Coursework
+                <ul id="dropdown">
+                    <li><a href="chapter1.html">Chapter 1</a></li>
+                    <li><a href="chapter2.html">Chapter 2</a></li>
+                    <li><a href="chapter3.html">Chapter 3</a></li>
+                    <li><a href="chapter4.html">Chapter 4</a></li>
+                    <li><a href="chapter5.html">Chapter 5</a></li>
+                    <li><a href="chapter6.html">Chapter 6</a></li>
+                    <li><a href="chapter7.html">Chapter 7</a></li>
+                    <li><a href="chapter8.html">Chapter 8</a></li>
+                    <li><a href="chapter9.html">Chapter 9</a></li>
+                    <li><a href="chapter10.html">Chapter 10</a></li>
+                    <li><a href="chapter11.html">Chapter 11</a></li>
+                    <li><a href="chapter12.html">Chapter 12</a></li>
+                </ul>
+            </li>
+          
+        </ul>
+    </nav>
+
+    <script src="dropdown2.js"></script>
+        
+        <div class="summary">
+            <h1><u>Chapter 6: Sequences</u></h1>
+            <h4><b>What is a Sequence?</b></h4>
+            <p>A <u>sequence</u> is an orderly group of items that will be accessed in the same order as when they were first created. There are a few types of sequences, such as strings, lists and tuples.</p>
+            <h4><b>What is a String?</b></h4>
+            <p>A <u>string</u> is an organized set of characters. However, there can also be strings with no characters, which are called <u>empty strings</u>.</p>
+            <h4><b>What is a List?</b></h4>
+            <p>A <u>list</u> is an ordered group of various data types (integer, string, float), where the values inside the list are called the <u>elements.</u> Though lists can have different data types, it is advised to stick to only using one in each list. Because it's easier to deal with when using it or applying functions to the lists.</p>
+            <h4><b>What is a Tuple? </b></h4>
+            <p> A <u>tuple</u> is similar to a list, that is an organized set of data types, however with tuples, the programmer can have a mix of data types.</p>
+            <h4><b>How are these sequence types applied?</b></h4>
+            <img src="sequence.png" alt="" class="sequence-img">
+            <br>
+            <h4><b>What is a indexing operator?</b></h4>
+            <p>An <u>indexing operator</u> is the element that the programmer is trying to access its position in a string. When accessing an element, the programmer has the option of counting and accessing the element from left to right, with the first element starting with number 0 and so on. While if the programmer wants to start from right(the end of the string) to left(start of the string), the element will start with the number -1 and etc.</p>
+            <img src="https://slideplayer.com/slide/6653669/23/images/11/Index+and+indexing+operator.jpg" alt="" class="index-img">
+            <p>In order to access the indexing operator, the programmer needs to first type the name of the string that they are accessing, and then with square brackets put the position number that they are trying to access. </p>
+            <img src="index.png" alt="" class="img-index">
+            <h4><b>Does the indexing operator apply to list and tuples?</b></h4>
+            <p>Yes, they can. Like with strings, in order to access the indexing operator, the programmer needs to use square brackets, the name of the list, string or tuple and the position number.</p>
+            <img src="index_operator.png" alt="" class="operator-img">
+            
+            <h4><b>What is the length function?</b></h4>
+            <p>The <u>length</u> function is used to access the amount of characters in a string, list, tuple or dictionary.</p>
+            <img src="length.png" alt="" class="length-img">
+            <h4><b>What are slice operators?</b></h4>
+            <p>A <u>slice operator</u> is a slice of a sequence. So think of  it as selecting a slice of pie.  </p>
+            <p>Now, to select a slice operator first the programmer needs to state at what position to start slicing, and then state when to end the slicing of the sequence. The start position begins with the index 0 and so on, and the end of the slice operator starts with the index operator 1.</p>
+            <img src="https://static.javatpoint.com/python/images/strings-indexing-and-splitting.png" alt="" class=" slice-img">
+            <img src="https://yourpcfriend.com/wp-content/uploads/2019/07/lists-indexing-and-splitting.png" alt="" class="slicing-img">
+            <h4><b>What is concatenation and repetition?</b></h4>
+            <p><u>Concatenate</u> is a way to add strings together or list together. In order to add the strings or list together, the programmer needs to put a "+" in between the strings/lists.</p>
+            <p><u>Repetition</u> in this case means that the data type is repeated, with using the "*" symbol, between the data type and the amount of types that the programmer wants the data type to be repeated.</p>
+            <img src="conca.png" alt="" class="conca-img">
+            <h4><b>What can be done with the count method?</b></h4>
+            <p> The <u>count</u> method is used to count the amount of times a character or a group of characters appear in a string. Counting lists is different, because when the programmer assigns the computer to count a specific character/group of characters, it can only count the element that has that specific character or group of characters in the list. And not every time that the character appears in each element.  </p>
+            <img src="count.png" alt="" class="count-img">
+            <h4><b>What is the index method?</b></h4>
+            <p>The <u>index method</u> is used to find the position/index of the desired element. If the desired element appears in different places of the list or string, the computer will output the position of the first desired element that it reads. One thing to note is that Python starts the counting at 0, just like the index operator.</p>
+            <img src="indexing.png" alt="" class="indexing-img">
+            <h4><b>What is splitting & joining?</b></h4>
+            <p><u>Splitting</u> is a method used to split strings into lists, so it helps to convert strings into lists. It also can be used to split a string and remove a character or a group of characters.</p>
+            <img src="split.png" alt="" class="split-img">
+            <p><u>Joining</u> is sort of like the opposite of splitting, it is used to take a list and join all the elements into a string. One can also add a character or group of characters in between the list elements. </p>
+            <img src="join.png" alt="" class="join-img">
+        </div>
+        
+
+        <footer class="page-footer clearfix">
+            <div class="page-footer-content fixed-width clearfix">
+                <small class="copy-right">All Content Copyright 2020 All Rights Reserved</small>
+                <small class="credits">Site Designed by<a href="#"> Gimena Valenzuela</a></small>
+            </div>
+        </footer>
+    </body>
+</html>

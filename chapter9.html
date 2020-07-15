@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>MSMU Python Chapter 9</title>
+        <link rel="stylesheet" href="chapter9.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="http://www.ecampustours.com/Media/eCTMediaLibraries/School%20Images/119173-101.gif" alt="">
+        </div>
+
+        <ul class="menu-ctn">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li id="menu">Coursework
+                <ul id="dropdown">
+                    <li><a href="chapter1.html">Chapter 1</a></li>
+                    <li><a href="chapter2.html">Chapter 2</a></li>
+                    <li><a href="chapter3.html">Chapter 3</a></li>
+                    <li><a href="chapter4.html">Chapter 4</a></li>
+                    <li><a href="chapter5.html">Chapter 5</a></li>
+                    <li><a href="chapter6.html">Chapter 6</a></li>
+                    <li><a href="chapter7.html">Chapter 7</a></li>
+                    <li><a href="chapter8.html">Chapter 8</a></li>
+                    <li><a href="chapter9.html">Chapter 9</a></li>
+                    <li><a href="chapter10.html">Chapter 10</a></li>
+                    <li><a href="chapter11.html">Chapter 11</a></li>
+                    <li><a href="chapter12.html">Chapter 12</a></li>
+                </ul>
+            </li>
+          
+        </ul>
+    </nav>
+
+    <script src="dropdown2.js"></script>
+        
+        <div class="summary">
+           <h1><u>Chapter 9: Transforming Sequences</u></h1>
+           <h4><b>What is mutability?</b></h4>
+           <p><u>Mutability</u> is when something can be changed. A sequence type that is mutable are lists, while strings and tuples are immutable.</p>
+           <img src="muta.png" alt="" class="muta-img">
+           <h4><b>What is the "del" function?</b></h4>
+           <p>The <u>del</u> function is used to delete a slice of a sequence or an item in a sequence. Just think of it as a delete button.</p>
+           <img src="del.png" alt="" class="del-img">
+           <h4><b>What is an object reference?</b></h4>
+           <p>Objects are basically things, but in a Python expression, objects are usually seen on the right hand of the equal sign. And the <u>object reference</u> represents the identity that is used to locate the memory of the object and variable name of the program. So think of it as if you have a P.O box and you want to get your mail(objects), you need to know the number of the P.O box(object reference) to find your mail.   </p>
+           <h4><b>What is aliasing?</b></h4>
+           <p><u>Aliasing</u> is when the data value of a variable is assigned/copied into another variable. When using aliasing, the return value is a Boolean variable, instead of a string, list or tuple.</p>
+           <img src="alias.png" alt="" class="alias-img">
+           <h4><b>What does the append method do?</b></h4>
+           <p>The <u>append method</u> is used to add items to the end of the sequence. It can add strings, integers, tuples and other sequence types.</p>
+           <h4><b>What does the concatenate method do?</b></h4>
+           <p>The <u>concatenate method</u> is similar to the append method, that it adds items to a variety of sequence types, like strings and lists. The main differences are that when concatenating, the programmer needs to type the "+" symbol in between the sequences or data types that the programmer wants to add together. Lastly, in the concatenate method, the programmer needs to use the updating part of the accumulator pattern. Where the original sequence is declared, and then the original sequence adds to the data type or sequence, that the programmer wants to add to the original sequence. </p>
+        <img src="app.png" alt="" class="append-img">
+        <h4><b>What are Non-mutating methods?</b></h4>
+        <p><u>Non-mutating</u> methods are methods that can't change or mutate a sequence, but it can use the original sequence and create a new sequence based on the original sequence. Some of these non-mutating methods include: upper(), lower() and replace().</p>
+        <img src="mut.png" alt="" class="mut-img">
+        <h4><b>How to use the accumalator pattern on lists?</b></h4>
+        <p>Using the <u>accumulator pattern</u> on lists is similar to how to use it with integers.</p>
+        <ol>
+            <li>Initialize accumulator variable.</li>
+            <li>Initialize for loop.</li>
+            <li>Accumulator variable needs to be updating empty list.</li>
+        </ol>
+        <ul>
+            <li>The main differences are, that since the accumulator variable is being used on lists, that the accumulator variable needs to be a list, because lists are being added.</li>
+            <li>One of the easiest ways to add items to a list, is through the accumulator pattern with the append method.</li>
+        </ul>
+        <img src="accu-list.png" alt="" class="accu-list">
+        <h4><b>How to use the accumalator pattern on strings</b></h4>
+        <p>Using the <u>accumulator pattern</u> on strings is like using the accumulator pattern on lists, the only differences are that the accumulator variable needs to be a string, and that the easiest way of adding items to a string is through concatenating. </p>
+        <img src="accu-str.png" alt="" class="str-img">
+    </div>
+        
+
+        <footer class="page-footer clearfix">
+            <div class="page-footer-content fixed-width clearfix">
+                <small class="copy-right">All Content Copyright 2020 All Rights Reserved</small>
+                <small class="credits">Site Designed by<a href="#"> Gimena Valenzuela</a></small>
+            </div>
+        </footer>
+    </body>
+</html>

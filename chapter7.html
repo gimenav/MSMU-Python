@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>MSMU Python Chapter 7</title>
+        <link rel="stylesheet" href="chapter7.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="http://www.ecampustours.com/Media/eCTMediaLibraries/School%20Images/119173-101.gif" alt="">
+        </div>
+
+        <ul class="menu-ctn">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li id="menu">Coursework
+                <ul id="dropdown">
+                    <li><a href="chapter1.html">Chapter 1</a></li>
+                    <li><a href="chapter2.html">Chapter 2</a></li>
+                    <li><a href="chapter3.html">Chapter 3</a></li>
+                    <li><a href="chapter4.html">Chapter 4</a></li>
+                    <li><a href="chapter5.html">Chapter 5</a></li>
+                    <li><a href="chapter6.html">Chapter 6</a></li>
+                    <li><a href="chapter7.html">Chapter 7</a></li>
+                    <li><a href="chapter8.html">Chapter 8</a></li>
+                    <li><a href="chapter9.html">Chapter 9</a></li>
+                    <li><a href="chapter10.html">Chapter 10</a></li>
+                    <li><a href="chapter11.html">Chapter 11</a></li>
+                    <li><a href="chapter12.html">Chapter 12</a></li>
+                </ul>
+            </li>
+          
+        </ul>
+    </nav>
+
+    <script src="dropdown2.js"></script>
+        
+        <div class="summary">
+            <h1><u>Chapter 7: Iteration</u></h1>
+            <h4><b>What is an iteration?</b></h4>
+            <p>An <u>iteration</u> is used to repeat a task. Iterations have different loops, such as the "for loop" and the "while loop". </p>
+            <h4><b>What is the for loop?</b></h4>
+            <p> The <u>for loop</u> is used to loop through a sequence, such as strings, lists, tuples and dictionaries. To initiate the for loop, the programmer needs to: </p>
+                <ol>
+                 <li>Type "for"(initiates the for loop)</li> 
+                 <li>Type the variable that takes the value of each item that is being iterated, called the iterator variable. This can be named "i" or another name.</li>  
+                <li>The programmer needs to type "in"  and then the sequence's name, in order to tell the computer what sequence to iterate over.</li>
+                </ol>
+                 <img src="for.png" alt="" class="for-img">
+            <p>For loop with strings.</p>
+            <img src="for2.png" alt="" class="for2-img">
+            <p><u>Result:</u></p>
+            <img src="for3.png" alt="" class="for3-img">
+            <p>For loop with lists.</p>
+            <img src="for4.png" alt="" class="for4-img">
+            <h4><b>What is the range function?</b></h4>
+            <p>The <u>range</u> function is used to return a sequence of numbers, which depends on the numbers inside the range function. In order to start the range function, the programmer needs to begin by typing "range()"; inside the parentheses, they can type one number, like 5. This will generate: 0,1,2,3,4. </p>
+                <ul>
+               <li>Remember that the range function starts to count from 0, which is the first number.</li> 
+                </ul>
+                <img src="forx.png" alt="" class="forx-img">
+            <p>Now, if they want to generate numbers between 5 and 10. Then: </p>
+                <ol>
+                    <li>The first number inside the range function, will be the starting point(states what number to start at), which in this case will be 5.</li>
+                    <li> Type a comma to separate both numbers</li>
+                    <li>Type endpoint number(is the number that the range function stops before reaching), which in this case will be 11.</li>
+                </ol>
+                <p>Why is it this way?</p>
+                <ul>
+                    <li>Well, Python starts it's countdown with the startpoint number, and the difference between 5 and 11 is 6, so Python counts these six numbers: "5,6,7,8,9,10".</li>
+                </ul>
+            <img src="range.png" alt="" class="range-img">
+            <p>In addition, this function can  be used to perform a task repeatedly, again depending on the numbers inside the range function.</p>
+            <img src="for5.png" alt="" class="for5-img">
+            <h4><b>What is the accumulator pattern?</b></h4>
+            <p>The <u>accumulator pattern</u> is a very useful pattern tool, which can be used to add, subtract or multiply the numbers in a list. It can either increment or decrement the total value of the list of numbers in the sequence.</p>
+            <p>The way to use the accumulator pattern is to: </p>
+                <ol>
+                    <li>Start with the accumulator variable, which states what number to start with, such as 0(this variable is stated before the for loop). </li>
+                    <li>Initiate for loop, which iterates through the sequence.</li>
+                    <li>The accumulator variable starts with the original value of 0, and each time it updates the accumulator variable by adding, subtracting, or multiplying each time it iterates through a number from the list.</li>
+                </ol>
+            <img src="accum.png" alt="" class="accum-img">
+            <h4><b>How to use the for loop for indexing?</b></h4>
+            <p>Indexing in a for loop can be done in lists, strings, dictionaries and other types of sequences. To start indexing in a for loop: </p>
+                <ol>
+                    <li>Create a sequence</li>
+                    <li>Type a for loop that uses the range function, with either the amount of items in the sequence or less than the total number of items.</li>
+                    <li>Print the iterator variable, with a comma next to it, and lastly the name of the sequence/variable name, square brackets next to it, and inside the brackets the variable name.</li>
+                </ol>
+            <p>But why print that?</p>
+                <ul>
+                    <li> Well, first the iterator variable is printed because it generates the numbers that are in the range function, and the numbers that will be used to enumerate/index the items in the sequence.</li>
+                    <li>The variable name[iterator variable] is printed, because it tells Python to assign every number in the range function that is being iterated, to put those in order of the items in the sequence.</li>
+                </ul>
+            <img src="for_i.png" alt="" class="for-iimg">
+        </div>
+        
+
+        <footer class="page-footer clearfix">
+            <div class="page-footer-content fixed-width clearfix">
+                <small class="copy-right">All Content Copyright 2020 All Rights Reserved</small>
+                <small class="credits">Site Designed by<a href="#"> Gimena Valenzuela</a></small>
+            </div>
+        </footer>
+    </body>
+</html>

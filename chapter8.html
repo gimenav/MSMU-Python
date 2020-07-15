@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>MSMU Python Chapter 8</title>
+        <link rel="stylesheet" href="chapter8.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="http://www.ecampustours.com/Media/eCTMediaLibraries/School%20Images/119173-101.gif" alt="">
+        </div>
+
+        <ul class="menu-ctn">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li id="menu">Coursework
+                <ul id="dropdown">
+                    <li><a href="chapter1.html">Chapter 1</a></li>
+                    <li><a href="chapter2.html">Chapter 2</a></li>
+                    <li><a href="chapter3.html">Chapter 3</a></li>
+                    <li><a href="chapter4.html">Chapter 4</a></li>
+                    <li><a href="chapter5.html">Chapter 5</a></li>
+                    <li><a href="chapter6.html">Chapter 6</a></li>
+                    <li><a href="chapter7.html">Chapter 7</a></li>
+                    <li><a href="chapter8.html">Chapter 8</a></li>
+                    <li><a href="chapter9.html">Chapter 9</a></li>
+                    <li><a href="chapter10.html">Chapter 10</a></li>
+                    <li><a href="chapter11.html">Chapter 11</a></li>
+                    <li><a href="chapter12.html">Chapter 12</a></li>
+                </ul>
+            </li>
+          
+        </ul>
+    </nav>
+
+    <script src="dropdown2.js"></script>
+        
+        <div class="summary">
+           <h1><u>Chapter 8: Conditionals</u></h1>
+           <h4><b>What is a conditional?</b></h4>
+           <p>A <u>conditional</u> is used to check if the conditions that have previously been stated will run the program effectively.</p>
+            <h4><b>What are boolean variables?</b></h4>
+            <p>There are two <u>boolean variables</u>, True and False. Which are used to evaluate conditional statements. Such as:</p>
+            <img src="boolean.png" alt="" class="bool-img">
+            <h4><b>What are logical operators?</b></h4>
+            <p><u>Logical operators</u> are used on conditional statements, and are placed between two conditional statements. Logical operators include : "and", "or", and "not". </p>
+            <img src="logic.png" alt="" class="logic-img">
+            <h4><b>What are the membership operators?</b></h4>
+            <p><u>Membership operators</u> check if the data type is in the sequence.</p>
+            <img src="member.png" alt="" class="member-img">
+            <h4><b>What is the "if...else" statement?</b></h4>
+            <p>The <u>if...else</u> statement is used to execute a code if the condition is True. But if the code doesn't meet the criteria of the condition (is False), then the programmer uses the "else" statement to execute an alternative result.</p>
+            <img src="ifelse.png" alt="" class="ifelse-img">
+            <h4><b>What are Nested Conditionals?</b></h4>
+            <p><u>Nested conditionals</u> are used to put conditionals into already created conditionals. That means that the programmer can start with a conditional, stating " if statement is...", and underneath that conditional, they declare another if statement and then finish with an else statement. Or they can create more if else statements afterwards. </p>
+                <ul>
+                    <li>Note that the short version of the "if else" statement is "elif".</li>
+                </ul>
+            <img src="nest.png" alt="" class="nest-img">
+            <h4><b>What are Chained Conditionals?</b></h4>
+            <p><u>Chained conditionals</u> are used when the programmer wants to add many conditionals to the program.</p>
+            <img src="chained.png" alt="" class="chained-img">
+            <h4><b>How do conditionals work with the accumalator pattern?</b></h4>
+                <ol>
+                    <li>Create a sequence.</li>
+                    <li>Initialize the accumulator variable.</li>
+                    <li>Declare a for loop.</li>
+                    <li>Declare a conditional.</li>
+                    <li>The accumulator variable is updated every time the for loop iterates through the sequence items.</li>
+                </ol>
+                <ul>
+                    <li>That's if the sequence meets the established conditional(s), then the value of the accumulator variable can be updated.</li>
+                </ul>
+            <img src="condi.png" alt="" class="condi-img">
+            <h4><b>How to find the "max" and "min" with the accumalator pattern?</b></h4>
+                <ol>
+                    <li>A accumalator variable is established.</li>
+                    <li>A for loop is declared.</li>
+                    <li>Inside the for loop the conditional of "if the iterator variable is greater than the accumulator variable" is declared.</li>
+                </ol>
+                <ul>
+                    <li>This is to find the max integer or float in a sequence. </li>
+                    <li>If the programmer wants to find the min item in a sequence, then they need follow the same directions used to find the max in a sequence.</li>
+                    <li>The only difference is that the conditional will state, "if the iterator variable is less than the accumulator variable".</li>
+                </ul>
+                <p>To find the max or the min in a sequence, the programmer needs to: </p>
+                    <ol>
+                        <li>Iterate through every item in the sequence.</li>
+                        <li>The accumulator variable becomes the first item in the sequence. </li>
+                        <li>Another item is iterated, and if the item is less than the current value of the accumulator variable, then the value stays and it goes on to the next item. Until it determines if the current accumulator variable value is the max value in the sequence. </li>
+                    </ol>
+                    <ul>
+                        <li>Same applies to finding the min item, except that it's looking for the lowest value in the sequence. </li>
+                    </ul>
+            
+            <img src="ifcon.png" alt="" class="ifcon-img">
+        </div>
+        
+
+        <footer class="page-footer clearfix">
+            <div class="page-footer-content fixed-width clearfix">
+                <small class="copy-right">All Content Copyright 2020 All Rights Reserved</small>
+                <small class="credits">Site Designed by<a href="#"> Gimena Valenzuela</a></small>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,347 @@
+/*------------------
+    Header
+-------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,*,*::before,*::after{
+    box-sizing: border-box;
+  }
+  
+  html,body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rebeccapurple;
+  }
+  
+  h1,h2,h3,h4,h5,h6{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform:none ;
+    font-weight: 500;
+    margin: 0 0 1em;
+  }
+  
+  h2{
+    font-size: 1.5rem;
+  }
+  
+  h3{
+    font-size: 1.2rem;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  a{
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:hover,a:active{
+    text-decoration: none;
+    color: rgb(238,168,14);
+}
+  
+  .fix-width{
+    width: 940px;
+    margin: 0 auto;
+  }
+  
+  .clearfix::before,
+  .clearfix::after{
+    content: " ";
+    display: table;
+  }
+  
+  .clearfix::after{
+    clear: both;
+  }
+
+  title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    color: rebeccapurple;
+  }
+  
+  p{
+    margin: 0.5em 0;
+    line-height: 1.2;
+    color: black;
+  }
+
+  
+  .img-layout{
+    height: 470px;
+    width: 900px;
+    padding-bottom: 0em;
+    top: 1em;
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+
+/*------------------
+  Logo & Menu
+------------------*/
+
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.logo{
+    width: 23%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+}
+
+.logo img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu-ctn > li{
+    display: inline-block;
+    background-color: white;
+    padding-right: 15px;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+    transition: all 0.5s ease;
+    color: rgb(238,168,14);
+    font-weight: bold;
+    font-size: 23px;
+    position: relative;
+    
+}
+
+.menu-ctn li:hover{
+    cursor: pointer;
+    background-color: rgb(90,42,130);
+    transition: all 0.5s ease;
+    color: rgb(238,168,14);
+}
+
+#dropdown{
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    left: 0;
+    top: 100%;
+    background-color: rgb(90,42,130);
+}
+
+
+#dropdown li{
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: rgb(243, 240, 245);
+}
+
+#dropdown > li:hover{
+    background-color: rgb(90,42,130);
+    transition: all 0.5s ease;
+    
+}
+
+#dropdown:hover{
+    background-color: rgb(90,42,130);
+}
+
+#dropdown.active{
+    display: block;
+   
+}
+
+/*==============
+    Header
+================*/
+
+.page-header{
+    border-top: 0px solid white;
+}
+
+.page-header>div{
+    position: relative;
+    padding-bottom: 0em;
+}
+
+.page-header nav{
+    float: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+
+.page-header nav li{
+    color: rebeccapurple;
+    float: left;
+    margin-right: 3rem;
+    padding-top: 2rem;
+    font-size: 23px;
+    text-emphasis: none;
+    margin-bottom: 55px;
+}
+
+.page-header nav li:last-child{
+    margin-right: 1.3em;
+}
+
+/*===================
+    About Paragraphs
+    & Img
+====================*/
+
+.fixed-width{
+    display: block;
+}
+.wrap{
+    width: 200px;
+    margin: auto;
+    margin-top: 60px ;
+    margin-right: 2em;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.4s;
+    max-width: 200px;
+    max-height: 600px;
+    background-color: lightgray;
+    color: rebeccapurple;
+    text-align: center;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 1.5em;
+    float: right;
+    margin-top: 5em;
+    
+}
+
+.clearfix::before,
+.clearfix::after{
+    content: " ";
+    display: table;
+}
+
+.teacher-img{
+    float: right;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0em;
+    margin-left: 1rem;
+   
+}
+
+.container > p{
+    color: rebeccapurple;
+    
+}
+
+.container > h4{
+    margin-top: 2em;
+    
+}
+
+
+.about-para> h1{
+    padding: 2.2em;
+    max-width: 70%;
+    margin-bottom: 1em;
+    margin-top: -2.5em;
+}
+
+.about-para > p{
+    padding: 0.5em;
+    margin-top: -3.5em;
+    line-height: 2em;
+    max-width: 70%;
+    color: black;
+    margin-left: 2.5em;
+}
+
+.line{
+    margin-bottom: 1.5em;
+}
+
+.about-para a{
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+.course-para h1{
+    padding: 2.2em;
+}
+
+.course-para a{
+    font-weight: normal;
+}
+
+.course-para > p{
+    padding: 0.5em;
+    margin-top: -3.5em;
+    line-height: 2em;
+    max-width: 70%;
+    margin-left: 2.5em;
+}
+
+.course-statement h1{
+    padding: 2.2em;
+}
+
+.course-statement > p{
+    margin-left: 2.5em;
+    max-width: 70%;
+    line-height: 2em;
+    padding: 0.5em;
+    margin-top: -3.5em;
+    margin-bottom: 2em;
+}
+/*=====================
+    Footer
+======================*/
+
+.page-footer::before{
+    content: " ";
+    display: block;
+    height: 5px;
+}
+
+.page-footer{
+    background-color: lightgrey ;
+    color: rebeccapurple;
+    font-size: 1rem;
+    height: 50px;
+}
+
+.page-footer .copyright{
+    float: right;
+}
+
+.page-footer .credits{
+    float: right;
+    padding-right: 1em;
+}
+
+.page-footer-content{
+    padding: 1em 0;
+}
+
